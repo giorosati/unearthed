@@ -1,5 +1,5 @@
 import express from 'express'
-const app = 'express'
+const app = express()
 app.use('/public', express.static('./public'))
 app.use('/scripts', express.static('./public/scripts'))
 app.get('/', (req, res) => {
